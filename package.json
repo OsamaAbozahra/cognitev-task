@@ -1,0 +1,30 @@
+{
+  "name": "acl",
+  "version": "1.0.0",
+  "description": "This is an implementation of an Access Control List module that can be used in an api application to limit access of users with different roles to the API endpoints.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "node_modules/.bin/babel src --out-dir lib --watch --ignore 'spec/**/*.spec.js','spec/**/*.test.js'",
+    "test": "jasmine ./spec/create-roles.spec.js && jasmine ./spec/set-permissions.spec.js && jasmine ./spec/check-permissions.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsamaAbozahra/cognitev-task.git"
+  },
+  "keywords": [],
+  "author": "Osama Abozahra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OsamaAbozahra/cognitev-task/issues"
+  },
+  "homepage": "https://github.com/OsamaAbozahra/cognitev-task#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-stage-0": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "jasmine": "^3.4.0"
+  }
+}
