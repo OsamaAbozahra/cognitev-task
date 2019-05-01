@@ -1,6 +1,6 @@
 {
   "name": "acl-cognitev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is an implementation of an Access Control List module that can be used in an api application to limit access of users with different roles to the API endpoints.",
   "main": "./lib/index.js",
   "scripts": {
