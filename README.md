@@ -6,7 +6,7 @@
 
 ### First you need to run:
 
-### `npm install acl`
+### `npm install acl-cognitev`
 
 ### Then Creating roles:
 
