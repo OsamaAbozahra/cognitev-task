@@ -13,7 +13,7 @@
 A user role can be defined by calling a createRole method on the module, like so:
 
 ```
-import acl from 'acl';
+import acl from 'acl-cognitev';
 // create different roles
 acl.createRole('admin');
 acl.createRole('user');
@@ -24,7 +24,7 @@ acl.createRole('guest');
 Permissions should be defined using functions a and an, like so:
 
 ```
-import { a, an } from 'acl';
+import { a, an } from 'acl-cognitev';
 // admin can list all users
 an('admin').can('get').from('/users');
 // admin can create users
@@ -39,7 +39,7 @@ a('guest').can('get').from('/articles');
 ## Checking permissions:
 Check if a given role can perform a given action on a given endpoint like so:
 ```
-import { check } from 'acl';
+import { check } from 'acl-cognitev';
 check.if('guest').can('post').to('/users').value(); // false
 check.if('admin').can('post').to('/users').value(); // true
 // check if a user can post to articles
